@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Angular JS Assignment 4</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var module= angular.module("myapp", []);
+		module.run(function($rootScope) {
+			$rootScope.appName="My Application";
+
+
+		});
+		module.controller("myctrl1", function($scope)
+		{
+			$scope.fname="Acad";
+			$scope.lname="Gild";
+			$scope.appName="Not My Application";
+		});
+
+		module.controller("myctrl2", function($scope)
+		{
+			$scope.fname="Hello";
+			$scope.lname="Curious";
+			
+		});
+		
+
+	</script>
+</head>
+<body>
+<div class="container" ng-app="myapp">
+	<p> The Application Name (rootscope variable) : <b> <i> {{appName}} </i> </b></p>
+	<div ng-controller="myctrl1">
+		<p> Name : <b> <i>{{fname}} {{lname}}</i></b></p>
+		<p> Modified Name : <b><i> {{appName}} </i></b> </p>
+	</div>
+	<div ng-controller="myctrl2">
+		<p> Name : <b><i> {{fname}} {{lname}} </i></b> </p>
+	</div>
+</div>
+
+
+</body>
+</html>

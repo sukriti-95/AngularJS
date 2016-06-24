@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Angular JS Assignment 1</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+	  var module= angular.module("myApp", []);
+	  module.controller("myCtrl", function($scope)
+	  {
+	  	$scope.employee= {name: "Employee1", age: 40, id: 121}
+	  });
+
+	</script>
+
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+	<form action="#">
+		Employee Name:<input type="text" name="empname" placeholder="Enter employee name" ng-model="employee.name">
+		Employee Age:<input type="text" name="empage" placeholder="Enter employee age" ng-model="employee.age">
+		Employee ID:<input type="text" name="empid" placeholder="Enter employee ID" ng-model="employee.id">
+	</form>
+	<br>
+	<br>
+	<br>
+
+	<table border= "2px" >
+		<thead>
+			<th> Employee Details</th>
+			<th> Values</th>
+		</thead>
+		<tbody>
+			<tr> 
+			<td ng-bind="employee.name"> </td>
+
+			<td ng-bind="employee.age"> </td>
+
+			<td ng-bind="employee.id"> </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>

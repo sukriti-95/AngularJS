@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Angular JS Assignment 2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		
+		var module= angular.module("myapp", []);
+		module.controller("mycontroller", function($scope){
+			$scope.person={ name: "Sukriti", lastname: "Kakkar"}
+		});
+	</script>
+</head>
+<body>
+<div ng-app="myapp" ng-controller="mycontroller">
+	{{person.name}} {{person.lastname}}
+</div>
+
+</body>
+</html>
