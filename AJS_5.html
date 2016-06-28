@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title> Angular JS Assignment 5</title>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script type="text/javascript">
 		var module= angular.module("myapp", []);
@@ -11,8 +12,8 @@
 
 	</script>
 </head>
-<body>
-<div ng-app="myapp" ng-controller="myctrl">
+<body ng-app="myapp">
+<div  ng-controller="myctrl">
 Name: <input  ng-model="emp.Name">
 EmployeeID: <input ng-model="emp.EmployeeID">
 Designation: <input ng-model="emp.Designation">
