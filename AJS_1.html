@@ -9,6 +9,11 @@
 	  var module= angular.module("myApp", []);
 	  module.controller("myCtrl", function($scope)
 	  {
+	  	$scope.hello = function print()
+			{
+				
+				alert("Details Submitted");
+			}
 	  	$scope.employee= {name: "Employee1", age: 40, id: 121}
 	  });
 
@@ -22,6 +27,7 @@
 		Employee Name:<input type="text" name="empname" placeholder="Enter employee name" ng-model="employee.name">
 		Employee Age:<input type="text" name="empage" placeholder="Enter employee age" ng-model="employee.age">
 		Employee ID:<input type="text" name="empid" placeholder="Enter employee ID" ng-model="employee.id">
+		<button ng-click="hello();"> Submit </button>
 	</form>
 	<br>
 	<br>
