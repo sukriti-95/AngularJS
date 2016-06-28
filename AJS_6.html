@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title> Angular JS Assignment 5</title>
+	<!-- Make Use of NgClick event directive on the button to show an alert, NgDbclick event directive on the button to show an alert,  ng-Bind attribute and show values of scope inside the view. -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script type="text/javascript">
 		var module=angular.module("myapp", []);
@@ -18,8 +19,8 @@
 
 	</script>
 </head>
-<body>
-<div class="conatiner" ng-app="myapp" ng-controller="myctrl">
+<body ng-app="myapp">
+<div class="conatiner"  ng-controller="myctrl">
     <p> For Single Click Event</p>
 	<button ng-click="clickFunc()"> Click Here</button>
 	<br>
