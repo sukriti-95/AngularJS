@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title> Angular JS Assignment 2</title>
+	<!-- Create module “myapp” and controller “ mycontroller” with scope properties such as “
+name and last name” -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script type="text/javascript">
 		
@@ -11,8 +13,14 @@
 		});
 	</script>
 </head>
-<body>
-<div ng-app="myapp" ng-controller="mycontroller">
+<body ng-app="myapp">
+<div  ng-controller="mycontroller">
+	Name: <input type="text" name="pname" ng-model="person.name">
+<br>
+<br>
+Surname: <input type="text" name="psurname" ng-model="person.lastname">
+<br>
+<br>
 	{{person.name}} {{person.lastname}}
 </div>
 
