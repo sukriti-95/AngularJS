@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Angular JS Assignment 3</title>
+	<!--Make a controller with scope and print “Hello World”.-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script type="text/javascript">
 		var module= angular.module("myapp", []);
@@ -14,8 +15,8 @@
 		})
 	</script>
 </head>
-<body>
-<div ng-app="myapp" ng-controller="myctrl">
+<body ng-app="myapp">
+<div  ng-controller="myctrl">
 <button ng-click="fun();"> Click here</button>
 	
 </div>
